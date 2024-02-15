@@ -1,5 +1,4 @@
 const express = require('express')
-const { port } = require('./configs/app.config')
 
 const app = express()
 
