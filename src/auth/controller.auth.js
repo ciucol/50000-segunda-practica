@@ -30,4 +30,8 @@ router.post('/', async (req, res) => {
   }
 })
 
+router.get('/current', passport.strategy('jwt', {}), (req, res) => {
+  res.json({ message: req.user })
+})
+
 module.exports = router
